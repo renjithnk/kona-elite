@@ -76,6 +76,10 @@ img {
 .video-container-items {
   border: 0;
 }
+.video-container-tag {
+  max-height: 300px;
+  background: #3f1213;
+}
 
 .made-in-usa {
   margin-left: auto;
