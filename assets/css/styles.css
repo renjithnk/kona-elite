@@ -85,7 +85,7 @@ nav ul {
   nav ul {
     display: flex;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 35px;
   }
 }
 
