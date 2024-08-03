@@ -26,7 +26,12 @@
         <div class="page-title-section">
             <div class="page-title-section-container">
                 <div class="page-title-section__col1">
-                    <img src="assets/images/kona-elite-logo.svg" alt="logo" class="page-title-section__col1-logo">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="assets/images/kona-elite-logo-lg.svg">
+                        <source media="(min-width:768px)" srcset="assets/images/kona-elite-logo-md.svg">
+                        <img src="assets/images/kona-elite-logo-xs.svg" alt="logo"
+                            class="page-title-section__col1-logo">
+                    </picture>
                 </div>
                 <div class="page-title-section__col2">
                     <h1 class="page-title-section__col2-heading">KonaElite
@@ -36,17 +41,32 @@
                         Yacht Industry</h1>
                 </div>
             </div>
-
         </div>
         <div class="page-content-section">
             <div class="double-column-image-container">
-                <img src="assets/images/private-jet-image.jpg" alt="home page image one">
-                <img src="assets/images/yacht-image.jpg" alt="home page image two">
-                <img src="assets/images/private-jet-inside-image.jpg" alt="home page image two">
-                <img src="assets/images/yacht-inside-image.jpg" alt="home page image two">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/private-jet-image-md.webp">
+                    <img src="assets/images/private-jet-image-xs.webp" alt="home page image one"
+                        class="double-column-image-container-images">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/yacht-image-md.webp">
+                    <img src="assets/images/yacht-image-md.webp" alt="home page image two"
+                        class="double-column-image-container-images">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/private-jet-inside-image-md.webp">
+                    <img src="assets/images/private-jet-inside-image-xs.webp" alt="home page image three"
+                        class="double-column-image-container-images">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/yacht-inside-image-md.webp">
+                    <img src="assets/images/yacht-inside-image-xs.webp" alt="home page image four"
+                        class="double-column-image-container-images">
+                </picture>
             </div>
             <div class="slogan">
-                <img src="assets/images/kona-elite-slogan.jpg" class="slogan-image" alt="slogan image">
+                <img src="assets/images/kona-elite-slogan.webp" class="slogan-image" alt="slogan image">
             </div>
             <div class="story-description">
                 <p>Our "KonaElite" Kona coffee is custom roasted every order for the freshest taste in the industry.

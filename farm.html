@@ -26,7 +26,12 @@
         <div class="page-title-section">
             <div class="page-title-section-container">
                 <div class="page-title-section__col1">
-                    <img src="assets/images/kona-elite-logo.svg" alt="logo" class="page-title-section__col1-logo">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="assets/images/kona-elite-logo-lg.svg">
+                        <source media="(min-width:768px)" srcset="assets/images/kona-elite-logo-md.svg">
+                        <img src="assets/images/kona-elite-logo-xs.svg" alt="logo"
+                            class="page-title-section__col1-logo">
+                    </picture>
                 </div>
                 <div class="page-title-section__col2">
                     <h1 class="page-title-section__col2-heading">KonaElite<br>
@@ -37,10 +42,22 @@
         </div>
         <div class="page-content-section">
             <div class="double-column-image-container">
-                <img src="assets/images/farm-image1.jpg" alt="farm-image1">
-                <img src="assets/images/farm-image2.jpg" alt="farm-image2">
-                <img src="assets/images/farm-image3.jpg" alt="farm-image3">
-                <img src="assets/images/farm-image4.jpg" alt="farm-image4">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/farm-image1-md.webp">
+                    <img src="assets/images/farm-image1-xs.webp" alt="home page image one">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/farm-image2-md.webp">
+                    <img src="assets/images/farm-image2-xs.webp" alt="home page image one">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/farm-image3-md.webp">
+                    <img src="assets/images/farm-image3-xs.webp" alt="home page image one">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/farm-image4-md.webp">
+                    <img src="assets/images/farm-image4-xs.webp" alt="home page image one">
+                </picture>
             </div>
             <div class="farm-address">
                 <div class="farm-address__title">KonaElite</div>

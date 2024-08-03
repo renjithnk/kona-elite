@@ -26,7 +26,12 @@
         <div class="page-title-section">
             <div class="page-title-section-container">
                 <div class="page-title-section__col1">
-                    <img src="assets/images/kona-elite-logo.svg" alt="logo" class="page-title-section__col1-logo">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="assets/images/kona-elite-logo-lg.svg">
+                        <source media="(min-width:768px)" srcset="assets/images/kona-elite-logo-md.svg">
+                        <img src="assets/images/kona-elite-logo-xs.svg" alt="logo"
+                            class="page-title-section__col1-logo">
+                    </picture>
                 </div>
                 <div class="page-title-section__col2">
                     <h1 class="page-title-section__col2-heading">Say "Hello"
@@ -38,8 +43,18 @@
         </div>
         <div class="page-content-section">
             <div class="single-column-image-container">
-                <img src="assets/images/home-page-image1.jpg" alt="home page image one">
-                <img src="assets/images/home-page-image2.jpg" alt="home page image two">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="assets/images/home-page-image1-lg.webp">
+                    <source media="(min-width:768px)" srcset="assets/images/home-page-image1-md.webp">
+                    <img src="assets/images/home-page-image1-xs.webp" alt="home page image one"
+                        class="single-column-image-container-images">
+                </picture>
+                <picture>
+                    <source media="(min-width:1200px)" srcset="assets/images/home-page-image2-lg.webp">
+                    <source media="(min-width:768px)" srcset="assets/images/home-page-image2-md.webp">
+                    <img src="assets/images/home-page-image2-xs.webp" alt="home page image one"
+                        class="single-column-image-container-images">
+                </picture>
             </div>
         </div>
     </div>
