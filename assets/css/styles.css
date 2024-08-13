@@ -286,6 +286,12 @@ img {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .double-column-image-container img {
+    height: 500px;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .double-column-image-container {
     grid-template-columns: repeat(2, 1fr);
