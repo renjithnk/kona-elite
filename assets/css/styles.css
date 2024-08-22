@@ -288,7 +288,14 @@ img {
 
 @media only screen and (min-width: 768px) {
   .double-column-image-container img {
-    height: 500px;
+    height: 210px;
+    /* object-position: bottom; */
+  }
+}
+@media only screen and (min-width: 992px) {
+  .double-column-image-container img {
+    height: 360px;
+    /* object-position: bottom; */
   }
 }
 
@@ -302,6 +309,11 @@ img {
 .double-column-image-container-images {
   object-fit: cover;
   width: 100%;
+}
+
+.double-column-image-container-item-heading {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .site-footer {
@@ -349,12 +361,12 @@ img {
 
 .slogan {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 0;
   padding-bottom: 30px;
 }
 @media only screen and (min-width: 1200px) {
   .slogan {
-    padding-top: 70px;
+    padding-top: 0;
     padding-bottom: 70px;
   }
 }
@@ -367,7 +379,15 @@ img {
 }
 
 .story-description {
+  margin-top: 40px;
 }
+
+@media only screen and (min-width: 992px) {
+  .story-description {
+    margin-top: 70px;
+  }
+}
+
 .story-description p {
   font-size: 18px;
   line-height: 23px;
@@ -626,4 +646,12 @@ img {
   .farm-photo-section__photo-grids-row {
     grid-gap: 30px;
   }
+}
+
+.story-intro-pic {
+  margin-bottom: 30px;
+}
+
+.story-jazz-pic {
+  margin-top: 30px;
 }
