@@ -111,6 +111,17 @@ img {
   display: flex;
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 .site-header {
   height: 5rem;
   display: flex;
@@ -376,8 +387,6 @@ img {
 }
 
 .story-description p {
-  font-size: 18px;
-  line-height: 23px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -440,10 +449,6 @@ img {
   }
 }
 
-.espresso-section-description__col1-p {
-  font-size: 16px;
-  font-weight: bold;
-}
 @media only screen and (min-width: 1200px) {
   .espresso-section-description__col1-p {
     font-size: 21px;
@@ -661,6 +666,38 @@ img {
 
 .story-jazz-pic {
   margin-top: 30px;
+}
+
+.image-grids {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .image-grids {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.image-grids__double-column {
+  display: grid;
+  grid-gap: 1.25rem;
+}
+@media only screen and (min-width: 768px) {
+  .image-grids__double-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.image-grids__single-column-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.image-grids__double-column-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
