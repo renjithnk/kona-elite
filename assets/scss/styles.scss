@@ -316,7 +316,7 @@ p {
 
 .site-footer {
     text-align: center;
-    padding-top: 20x;
+    padding-top: 20px;
     padding-bottom: 20px;
 
     @include lg-min {
@@ -568,6 +568,7 @@ p {
 .farm-address__line1 {
     font-weight: bold;
     font-size: 16px;
+    margin-bottom: 0;
 
     @include md-min {
         font-size: 19px;
@@ -700,3 +701,112 @@ p {
 }
 
 // Image Grids: End
+
+
+
+
+
+.tabs {
+    margin: 0;
+
+    &__row {
+        align-items: center;
+        margin-bottom: 0;
+        background: #922e28;
+    }
+}
+
+.tabs__nav-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 6px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid $color2;
+}
+
+.tabs__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include md-min {
+        display: flex;
+        justify-content: flex-start;
+        gap: 35px;
+    }
+
+    @include xl-min {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    >li {
+
+        >a {
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+            display: flex;
+            align-items: center;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            line-height: 1.75;
+
+            @include md-min {
+                font-size: 1.3rem;
+            }
+
+            &:hover {}
+        }
+
+        &.active {
+            color: #555;
+            cursor: default;
+
+            a {
+                color: $color2;
+                cursor: default;
+                border-bottom-color: transparent;
+
+                &:hover,
+                &:focus {
+                    cursor: default;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.tabs__content {
+    width: 100%;
+    margin-top: -1px;
+    background: $color2;
+
+    >.tabs__pane {
+        display: none;
+
+        &.active {
+            display: block;
+
+            @include md-min {}
+        }
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+
+/*# sourceMappingURL=styles.css.map */
+
+
+.kona-elite-music {
+    display: none;
+}

@@ -317,7 +317,7 @@ p {
 
 .site-footer {
   text-align: center;
-  padding-top: 20x;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 @media only screen and (min-width: 992px) {
@@ -571,6 +571,7 @@ p {
 .farm-address__line1 {
   font-weight: bold;
   font-size: 16px;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .farm-address__line1 {
@@ -698,6 +699,95 @@ p {
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+
+.tabs {
+  margin: 0;
+}
+.tabs__row {
+  align-items: center;
+  margin-bottom: 0;
+  background: #922e28;
+}
+
+.tabs__nav-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  grid-gap: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #FFE100;
+}
+
+.tabs__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (min-width: 768px) {
+  .tabs__nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .tabs__nav {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+.tabs__nav > li > a {
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+@media only screen and (min-width: 768px) {
+  .tabs__nav > li > a {
+    font-size: 1.3rem;
+  }
+}
+.tabs__nav > li.active {
+  color: #555;
+  cursor: default;
+}
+.tabs__nav > li.active a {
+  color: #FFE100;
+  cursor: default;
+  border-bottom-color: transparent;
+}
+.tabs__nav > li.active a:hover, .tabs__nav > li.active a:focus {
+  cursor: default;
+  border-bottom-color: transparent;
+}
+
+.tabs__content {
+  width: 100%;
+  margin-top: -1px;
+  background: #FFE100;
+}
+.tabs__content > .tabs__pane {
+  display: none;
+}
+.tabs__content > .tabs__pane.active {
+  display: block;
+}
+.tabs__content .active {
+  display: block;
+}
+
+
+.kona-elite-music {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
