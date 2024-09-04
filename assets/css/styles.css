@@ -649,7 +649,7 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .farm-photo-section__photo-grids {
-    grid-gap: 30px;
+    grid-gap: 1.5rem;
   }
 }
 .farm-photo-section__photo-grids-column {
