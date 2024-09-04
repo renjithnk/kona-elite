@@ -267,7 +267,6 @@ p {
 .single-column-image-container {
     display: grid;
     grid-gap: 20px;
-    justify-content: start;
 
     @include lg-min {
         grid-gap: 40px;
@@ -585,21 +584,25 @@ p {
 }
 
 .farm-photo-section__heading {
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: center;
 
     @include md-min {
-        font-size: 40px;
+        font-size: 2rem
     }
 }
 
 .farm-photo-section__container {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .farm-photo-section__container-heading {
-    font-size: 23px;
+    font-size: 1.1rem;
     text-align: center;
+
+    @include md-min {
+        font-size: 1.5rem;
+    }
 }
 
 .flag-image {
@@ -609,14 +612,17 @@ p {
 
 .flag-image-caption {
     text-align: center;
+    font-size: 1.5rem;
 
-    @include md-min {
-        font-size: 27px;
-    }
+    @include md-min {}
 }
 
 .farm-photo-section {
-    margin-top: 60px;
+    margin-top: 2rem;
+
+    @include lg-min {
+        margin-top: 4rem;
+    }
 }
 
 .farm-photo-section__photo-grids {
@@ -680,10 +686,27 @@ p {
 
     &__double-column {
         display: grid;
-        grid-gap: 1.25rem;
+        grid-gap: 1rem;
 
         @include md-min {
             grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.25rem;
+        }
+    }
+
+    &__double-column-items {
+        img {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: .9rem;
+            text-align: center;
+            margin-bottom: 0;
+
+            @include md-min {
+                font-size: 1.1rem;
+            }
         }
     }
 
@@ -810,3 +833,24 @@ p {
 .kona-elite-music {
     display: none;
 }
+
+/* Hawaii Photo Gallery: Start */
+.hawaii-photo-gallery {
+    margin-top: 2rem;
+
+    @include lg-min {
+        margin-top: 3rem;
+    }
+
+    &__heading {
+        font-size: 1.1rem;
+        text-align: center;
+
+        @include md-min {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+/* Hawaii Photo Gallery: End */

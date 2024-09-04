@@ -266,7 +266,6 @@ p {
 .single-column-image-container {
   display: grid;
   grid-gap: 20px;
-  justify-content: start;
 }
 @media only screen and (min-width: 992px) {
   .single-column-image-container {
@@ -590,22 +589,27 @@ p {
 }
 
 .farm-photo-section__heading {
-  font-size: 30px;
+  font-size: 1.5rem;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .farm-photo-section__heading {
-    font-size: 40px;
+    font-size: 2rem;
   }
 }
 
 .farm-photo-section__container {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .farm-photo-section__container-heading {
-  font-size: 23px;
+  font-size: 1.1rem;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .farm-photo-section__container-heading {
+    font-size: 1.5rem;
+  }
 }
 
 .flag-image {
@@ -615,15 +619,15 @@ p {
 
 .flag-image-caption {
   text-align: center;
+  font-size: 1.5rem;
 }
-@media only screen and (min-width: 768px) {
-  .flag-image-caption {
-    font-size: 27px;
-  }
-}
-
 .farm-photo-section {
-  margin-top: 60px;
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 992px) {
+  .farm-photo-section {
+    margin-top: 4rem;
+  }
 }
 
 .farm-photo-section__photo-grids {
@@ -683,11 +687,25 @@ p {
 }
 .image-grids__double-column {
   display: grid;
-  grid-gap: 1.25rem;
+  grid-gap: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .image-grids__double-column {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.25rem;
+  }
+}
+.image-grids__double-column-items img {
+  margin-bottom: 1rem;
+}
+.image-grids__double-column-items p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .image-grids__double-column-items p {
+    font-size: 1.1rem;
   }
 }
 .image-grids__single-column-img {
@@ -789,5 +807,27 @@ p {
 .kona-elite-music {
   display: none;
 }
+
+/* Hawaii Photo Gallery: Start */
+.hawaii-photo-gallery {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 992px) {
+  .hawaii-photo-gallery {
+    margin-top: 3rem;
+  }
+}
+.hawaii-photo-gallery__heading {
+  font-size: 1.1rem;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .hawaii-photo-gallery__heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Hawaii Photo Gallery: End */
 
 /*# sourceMappingURL=styles.css.map */
