@@ -540,10 +540,20 @@ p {
   }
 }
 
+.farm-intro-image-container {
+  margin-top: 2rem;
+}
+
 .farm-intro-image {
+  margin-top: 2rem;
   margin-bottom: 30px;
   object-fit: cover;
   width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .farm-intro-image {
+    margin-top: 3rem;
+  }
 }
 
 .farm-address {
@@ -832,14 +842,6 @@ p {
 /* Farm Videos: Start */
 .farm-videos {
   display: grid;
-  grid-gap: 1rem;
-  margin-top: 1rem;
-}
-@media only screen and (min-width: 992px) {
-  .farm-videos {
-    grid-gap: 2rem;
-    margin-top: 2rem;
-  }
 }
 .farm-videos__heading {
   text-align: center;

@@ -539,10 +539,19 @@ p {
     }
 }
 
+.farm-intro-image-container {
+    margin-top: 2rem;
+}
+
 .farm-intro-image {
+    margin-top: 2rem;
     margin-bottom: 30px;
     object-fit: cover;
     width: 100%;
+
+    @include lg-min {
+        margin-top: 3rem;
+    }
 }
 
 .farm-address {
@@ -859,13 +868,8 @@ p {
 
 .farm-videos {
     display: grid;
-    grid-gap: 1rem;
-    margin-top: 1rem;
 
-    @include lg-min {
-        grid-gap: 2rem;
-        margin-top: 2rem;
-    }
+    @include lg-min {}
 
     &__heading {
         text-align: center;
