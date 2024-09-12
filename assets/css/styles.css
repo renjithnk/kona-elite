@@ -361,11 +361,13 @@ p {
   text-align: center;
   padding-top: 0;
   padding-bottom: 30px;
+  margin-top: 2rem;
 }
 @media only screen and (min-width: 992px) {
   .slogan {
     padding-top: 0;
     padding-bottom: 70px;
+    margin-top: 3rem;
   }
 }
 
@@ -846,6 +848,7 @@ p {
 .farm-videos__heading {
   text-align: center;
   font-size: 1.1rem;
+  margin-top: 0;
 }
 @media only screen and (min-width: 992px) {
   .farm-videos__heading {

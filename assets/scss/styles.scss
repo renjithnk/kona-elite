@@ -358,10 +358,12 @@ p {
     text-align: center;
     padding-top: 0;
     padding-bottom: 30px;
+    margin-top: 2rem;
 
     @include lg-min {
         padding-top: 0;
         padding-bottom: 70px;
+        margin-top: 3rem;
     }
 }
 
@@ -874,6 +876,7 @@ p {
     &__heading {
         text-align: center;
         font-size: 1.10rem;
+        margin-top: 0;
 
         @include lg-min {
             font-size: 1.65rem;
