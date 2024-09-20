@@ -398,9 +398,11 @@ p {
 .products-container {
     display: grid;
     grid-gap: 30px;
+    margin-top: 2rem;
 
     @include md-min {
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
     }
 }
 
