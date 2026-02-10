@@ -1,6 +1,9 @@
 @use '../scss/mixins' as *;
 @use '../scss/variables' as *;
 
+body {
+    border-top: 2px solid yellow;
+}
 
 /* Web Fonts: Cambira: Start */
 
