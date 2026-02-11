@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 /* Media Queries */
 /* Borders */
@@ -878,5 +879,138 @@ p {
 }
 
 /* Farm Videos: End */
+.video-container {
+  position: relative;
+  width: 100%;
+  /* Adjust this as per your need */
+  margin: auto;
+}
+
+/* The custom play button style */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  /* Ensure it stays on top of the video */
+  transition: opacity 0.3s ease;
+  color: #333;
+}
+
+.play-button:hover {
+  opacity: 1;
+}
+
+.play-button:before {
+  content: "▶";
+  /* Unicode for play icon */
+  font-size: 0.938rem;
+  /* Play icon size */
+}
+
+/* Hide the default video controls */
+video {
+  height: auto;
+  display: block;
+  /* Black background for the video */
+}
+
+/* Style for paused video (to keep the play button visible) */
+.video-paused {
+  pointer-events: none;
+}
+
+/* Custom Video Controls: Start */
+.video-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  /* Adjust height for better fit with 500px width */
+}
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+}
+
+.play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: transparent;
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+  width: 110px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Play Button */
+.play-pause-btn.play::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  margin-left: 0.25rem;
+}
+
+/* Custom Pause Button */
+.play-pause-btn.pause::before,
+.play-pause-btn.pause::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 25px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.play-pause-btn.pause::before {
+  left: 43px;
+}
+
+.play-pause-btn.pause::after {
+  right: 43px;
+}
+
+.play-pause-btn:focus {
+  outline: none;
+}
+
+/* Additional styling for layout */
+.video-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Custom Video Controls: End */
 
 /*# sourceMappingURL=styles.css.map */

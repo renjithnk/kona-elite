@@ -23,3 +23,28 @@ window.addEventListener("load", function () {
   }
 });
 // Tabs: End
+
+// Custom Video Controls: Start
+const videos = document.querySelectorAll(".video-player");
+const playPauseButtons = document.querySelectorAll(".play-pause-btn");
+
+// Loop through each video player and button to add functionality
+videos.forEach((video, index) => {
+  const button = playPauseButtons[index];
+
+  function togglePlayPause() {
+    if (video.paused || video.ended) {
+      video.play();
+      button.classList.remove("play");
+      button.classList.add("pause");
+    } else {
+      video.pause();
+      button.classList.remove("pause");
+      button.classList.add("play");
+    }
+  }
+
+  button.addEventListener("click", togglePlayPause);
+});
+
+// Custom Video Controls: End
